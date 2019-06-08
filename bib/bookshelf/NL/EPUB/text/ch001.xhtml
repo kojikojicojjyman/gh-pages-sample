@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <title>Untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="../styles/stylesheet1.css" />
+</head>
+<body>
+<section id="section" class="level1 unnumbered">
+<h1></h1>
+<p>重力場のある座標系での一次元格子を考える。質量<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>m</mi>
+</math>の各質点の変位を<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>q</mi>
+    <mi>n</mi>
+  </msub>
+</math>とし、バネの伸びを</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-1">
+        <mtext>(1)</mtext>
+      </mtd>
+      <mtd>
+        <msub>
+          <mi>r</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <msub>
+              <mi>q</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>−<!-- − --></mo>
+            <msub>
+              <mi>q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow>
+            <mi mathvariant="normal">Δ<!-- Δ --></mi>
+            <mi>x</mi>
+          </mrow>
+        </mfrac>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>とする。また質点間の平衡距離を<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">Δ<!-- Δ --></mi>
+  <mi>x</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math>とする。線密度を<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>ρ<!-- ρ --></mi>
+</math>とすれば<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>m</mi>
+  <mo>=</mo>
+  <mi>ρ<!-- ρ --></mi>
+  <mi mathvariant="normal">Δ<!-- Δ --></mi>
+  <mi>x</mi>
+  <mo>=</mo>
+  <mi>ρ<!-- ρ --></mi>
+</math>である。</p>
+<p>バネのポテンシャルが</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-2">
+        <mtext>(2)</mtext>
+      </mtd>
+      <mtd>
+        <mi>ϕ<!-- ϕ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>k</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>C</mi>
+          <mi>r</mi>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+          <msup>
+            <mi>r</mi>
+            <mn>3</mn>
+          </msup>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>8</mn>
+          </mfrac>
+          <msup>
+            <mi>r</mi>
+            <mn>4</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>のとき、この質点系の運動方程式は</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-3_1">
+        <mtext>(3)</mtext>
+      </mtd>
+      <mtd>
+        <mi>k</mi>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>ϕ<!-- ϕ --></mi>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mi>k</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>C</mi>
+          <mo>+</mo>
+          <mi>r</mi>
+          <mo>+</mo>
+          <mfrac>
+            <mn>3</mn>
+            <mn>2</mn>
+          </mfrac>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+          <msup>
+            <mi>r</mi>
+            <mn>3</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>として、</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-4">
+        <mtext>(4)</mtext>
+      </mtd>
+      <mtd>
+        <mi>ρ<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mi>q</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>¨<!-- ¨ --></mo>
+          </mover>
+        </mrow>
+        <mo>=</mo>
+        <mfrac>
+          <mi>k</mi>
+          <mrow>
+            <mi mathvariant="normal">Δ<!-- Δ --></mi>
+            <mi>x</mi>
+          </mrow>
+        </mfrac>
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>q</mi>
+                <mi>n</mi>
+              </msub>
+              <mo>−<!-- − --></mo>
+              <msub>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>−<!-- − --></mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">Δ<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+          <mo>)</mo>
+        </mrow>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mi>k</mi>
+          <mrow>
+            <mi mathvariant="normal">Δ<!-- Δ --></mi>
+            <mi>x</mi>
+          </mrow>
+        </mfrac>
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>−<!-- − --></mo>
+              <msub>
+                <mi>q</mi>
+                <mi>n</mi>
+              </msub>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">Δ<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+          <mo>)</mo>
+        </mrow>
+        <mo>−<!-- − --></mo>
+        <mi>ρ<!-- ρ --></mi>
+        <mi>g</mi>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>より</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-5">
+        <mtext>(5)</mtext>
+      </mtd>
+      <mtd>
+        <mi>m</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mi>q</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>¨<!-- ¨ --></mo>
+          </mover>
+        </mrow>
+        <mo>=</mo>
+        <mi>k</mi>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>q</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>k</mi>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <msub>
+          <mi>q</mi>
+          <mi>n</mi>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>m</mi>
+        <mi>g</mi>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>となっている。ここで、変位<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>q</mi>
+    <mi>n</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mi>y</mi>
+  <mo stretchy="false">(</mo>
+  <mi>x</mi>
+  <mo>,</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mi>y</mi>
+  <mo stretchy="false">(</mo>
+  <mi>n</mi>
+  <mi mathvariant="normal">Δ<!-- Δ --></mi>
+  <mi>x</mi>
+  <mo>,</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+</math> として滑らかな関数<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>y</mi>
+  <mo stretchy="false">(</mo>
+  <mi>x</mi>
+  <mo>,</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+</math> を導入して、物体内部の座標で<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>x</mi>
+</math> となる質点の、空間上の位置を<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>z</mi>
+  <mo stretchy="false">(</mo>
+  <mi>x</mi>
+  <mo>,</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>y</mi>
+  <mo stretchy="false">(</mo>
+  <mi>x</mi>
+  <mo>,</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+</math> とおく。</p>
+<p>少し話は戻るが、各質点の位置を</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-6">
+        <mtext>(6)</mtext>
+      </mtd>
+      <mtd>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>z</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>z</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi mathvariant="normal">Δ<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mi mathvariant="normal">Δ<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">Δ<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>と置いて、ポテンシャルを書き直してみると</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-7">
+        <mtext>(7)</mtext>
+      </mtd>
+      <mtd>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi mathvariant="normal">Δ<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>で</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+    <mtr>
+      <mtd>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+      </mtd>
+      <mtd>
+        <mi></mi>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mi>C</mi>
+        <mo>−<!-- − --></mo>
+        <mi>r</mi>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mn>3</mn>
+          <mn>2</mn>
+        </mfrac>
+        <msup>
+          <mi>r</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <msup>
+          <mi>r</mi>
+          <mn>3</mn>
+        </msup>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mi></mi>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mi>C</mi>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mrow>
+          <mo>(</mo>
+          <mi>r</mi>
+          <mo>+</mo>
+          <mn>3</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <msup>
+            <mi>r</mi>
+            <mn>3</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mi></mi>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mi>C</mi>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mrow>
+          <mo>(</mo>
+          <mn>1</mn>
+          <mo>+</mo>
+          <mo>−<!-- − --></mo>
+          <mn>2</mn>
+          <mo>−<!-- − --></mo>
+          <mn>2</mn>
+          <mi>r</mi>
+          <mo>+</mo>
+          <mn>1</mn>
+          <mo>+</mo>
+          <mn>3</mn>
+          <mi>r</mi>
+          <mo>+</mo>
+          <mn>3</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <msup>
+            <mi>r</mi>
+            <mn>3</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
+<p>より、</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-8_1">
+        <mtext>(8)</mtext>
+      </mtd>
+      <mtd>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>C</mi>
+          <mo>′</mo>
+        </msup>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>r</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mn>3</mn>
+        </msup>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>なので、</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-9_1">
+        <mtext>(9)</mtext>
+      </mtd>
+      <mtd>
+        <msub>
+          <mi>R</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <msub>
+              <mi>Q</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>−<!-- − --></mo>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow>
+            <mi mathvariant="normal">Δ<!-- Δ --></mi>
+            <mi>x</mi>
+          </mrow>
+        </mfrac>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-10_1">
+        <mtext>(10)</mtext>
+      </mtd>
+      <mtd>
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <mi>R</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>C</mi>
+          <mo>′</mo>
+        </msup>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mi>R</mi>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <msup>
+            <mi>R</mi>
+            <mn>3</mn>
+          </msup>
+          <mn>2</mn>
+        </mfrac>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>とすると、<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>R</mi>
+    <mi>n</mi>
+  </msub>
+  <mo>=</mo>
+  <mn>1</mn>
+  <mo>+</mo>
+  <msub>
+    <mi>r</mi>
+    <mi>n</mi>
+  </msub>
+</math>だから</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-11_1">
+        <mtext>(11)</mtext>
+      </mtd>
+      <mtd>
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>R</mi>
+          <mi>n</mi>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>r</mi>
+          <mi>n</mi>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>という関係になる。また<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow class="MJX-TeXAtom-ORD">
+    <mover>
+      <msub>
+        <mi>Q</mi>
+        <mi>n</mi>
+      </msub>
+      <mo>˙<!-- ˙ --></mo>
+    </mover>
+  </mrow>
+  <mo>=</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mover>
+      <msub>
+        <mi>q</mi>
+        <mi>n</mi>
+      </msub>
+      <mo>˙<!-- ˙ --></mo>
+    </mover>
+  </mrow>
+</math> なので、<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>Q</mi>
+    <mi>n</mi>
+  </msub>
+</math>についての運動方程式が</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-12_1">
+        <mtext>(12)</mtext>
+      </mtd>
+      <mtd>
+        <mi>ρ<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mi>Q</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>¨<!-- ¨ --></mo>
+          </mover>
+        </mrow>
+        <mo>=</mo>
+        <mfrac>
+          <mi>k</mi>
+          <mrow>
+            <mi mathvariant="normal">Δ<!-- Δ --></mi>
+            <mi>x</mi>
+          </mrow>
+        </mfrac>
+        <mi>F</mi>
+        <mrow>
+          <mo>(</mo>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>Q</mi>
+                <mi>n</mi>
+              </msub>
+              <mo>−<!-- − --></mo>
+              <msub>
+                <mi>Q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>−<!-- − --></mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">Δ<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+          <mo>)</mo>
+        </mrow>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <mi>k</mi>
+          <mrow>
+            <mi mathvariant="normal">Δ<!-- Δ --></mi>
+            <mi>x</mi>
+          </mrow>
+        </mfrac>
+        <mi>F</mi>
+        <mrow>
+          <mo>(</mo>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>Q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>−<!-- − --></mo>
+              <msub>
+                <mi>Q</mi>
+                <mi>n</mi>
+              </msub>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">Δ<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+          <mo>)</mo>
+        </mrow>
+        <mo>−<!-- − --></mo>
+        <mi>ρ<!-- ρ --></mi>
+        <mi>g</mi>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>つまり</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-13">
+        <mtext>(13)</mtext>
+      </mtd>
+      <mtd>
+        <mi>m</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mi>Q</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>¨<!-- ¨ --></mo>
+          </mover>
+        </mrow>
+        <mo>=</mo>
+        <mi>k</mi>
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>Q</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>k</mi>
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <msub>
+          <mi>Q</mi>
+          <mi>n</mi>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>m</mi>
+        <mi>g</mi>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>と得られる。ここで<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>F</mi>
+  <mo stretchy="false">(</mo>
+  <mi>R</mi>
+  <mo stretchy="false">)</mo>
+</math> は、仮に任意定数を<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>C</mi>
+    <mo>′</mo>
+  </msup>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>として</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-14_1">
+        <mtext>(14)</mtext>
+      </mtd>
+      <mtd>
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <mi>R</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>R</mi>
+        <mo>−<!-- − --></mo>
+        <mfrac>
+          <msup>
+            <mi>R</mi>
+            <mn>3</mn>
+          </msup>
+          <mn>2</mn>
+        </mfrac>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>で与えられる。この系のポテンシャルは、任意定数を<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>0</mn>
+</math> とすれば</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-15">
+        <mtext>(15)</mtext>
+      </mtd>
+      <mtd>
+        <mi mathvariant="normal">Φ<!-- Φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>R</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mi>k</mi>
+        <msup>
+          <mi>R</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mi>k</mi>
+        <mfrac>
+          <msup>
+            <mi>R</mi>
+            <mn>4</mn>
+          </msup>
+          <mn>8</mn>
+        </mfrac>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>となっている。</p>
+<figure>
+<img src="../media/file0.png" alt="" /><figcaption></figcaption>
+</figure>
+<p>ちなみに、ポテンシャルが</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true">
+    <mlabeledtr>
+      <mtd id="mjx-eqn-16_1">
+        <mtext>(16)</mtext>
+      </mtd>
+      <mtd>
+        <mi>ϕ<!-- ϕ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mfrac>
+          <mi>k</mi>
+          <mn>2</mn>
+        </mfrac>
+        <msup>
+          <mi>r</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mfrac>
+          <msup>
+            <mi>k</mi>
+            <mo>′</mo>
+          </msup>
+          <mn>4</mn>
+        </mfrac>
+        <msup>
+          <mi>r</mi>
+          <mn>4</mn>
+        </msup>
+      </mtd>
+    </mlabeledtr>
+  </mtable>
+</math>
+<p>の形になっているものは、Fermi-Pasta-Uram格子<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>β<!-- β --></mi>
+</math>モデルと呼ばれており、よく研究されている。</p>
+<p></p>
+</section>
+</body>
+</html>
+
